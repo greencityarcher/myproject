@@ -1,0 +1,33 @@
+@import "../../_variables";
+
+.videoPresentation__video {
+  width: 320px;
+  height: 201px;
+  margin: 0 auto;
+
+  .respondTo(tablet, {
+    width: 648px;
+    height: 499px;
+  });
+
+  .respondTo(desktop, {
+    width: 800px;
+    height: 500px;
+  });
+}
+
+.videoPresentation__video video {
+  object-fit: inherit; //poster covers video
+  width: 320px;
+  height: 201px;
+
+  .respondTo(tablet, {
+    width: 648px;
+    height: 499px;
+  });
+
+  .respondTo(desktop, {
+    width: 800px;
+    height: 500px;
+  });
+}

@@ -1,0 +1,34 @@
+@import "../../_variables";
+
+.photoExemplar__photo {
+  width: 280px;
+  height: 280px;
+  margin: 0 auto;
+
+  .respondTo(tablet, {
+    width: 324px;
+    height: 267px;
+  });
+
+  .respondTo(desktop, {
+    width: 400px;
+    height: 267px;
+  });
+}
+
+.photoExemplar_large .photoExemplar__photo {
+  .respondTo(tablet, {
+    width: 648px;
+    height: 400px;
+  });
+
+  .respondTo(desktop, {
+    width: 1200px;
+    height: 400px;
+  });
+}
+
+.photoExemplar__photo picture {
+  width: auto;
+  height: auto;
+}

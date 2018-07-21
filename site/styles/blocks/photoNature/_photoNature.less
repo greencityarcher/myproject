@@ -1,0 +1,12 @@
+@import "../../_variables";
+
+.photoNature {
+  height: 260px;
+  background: url("../img/photo-bridge.png") no-repeat center;
+  background-size: cover;
+  .respondTo(tablet, {
+    grid-area: photoNature;
+    min-height: 256px;
+    height: auto;
+  });
+}

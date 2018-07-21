@@ -1,0 +1,12 @@
+@import "../../_variables";
+
+.photoCity {
+  height: 260px;
+  background: url("../img/photo-city.png") no-repeat center;
+  background-size: cover;
+  .respondTo(tablet, {
+    grid-area: photoCity;
+    min-height: 256px;
+    height: auto;
+  });
+}

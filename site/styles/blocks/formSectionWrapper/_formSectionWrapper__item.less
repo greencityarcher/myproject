@@ -1,0 +1,24 @@
+@import "../../_variables";
+
+.formSectionWrapper__item {
+  display: flex;
+  align-items: center;
+}
+
+.formSectionWrapper_feelings .formSectionWrapper__item {
+  height: 58px;
+}
+
+.userForm__section_visitedPoints .formSectionWrapper__item {
+  height: 58px;
+}
+
+.userForm__section_contacts .formSectionWrapper__item {
+  flex-direction: column;
+  align-items: flex-start;
+
+  .respondTo(desktop, {
+    flex-direction: row;
+    align-items: center;
+  });
+}

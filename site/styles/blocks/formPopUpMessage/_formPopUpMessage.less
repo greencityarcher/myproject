@@ -1,0 +1,64 @@
+@import "../../_variables";
+
+.formPopUpMessage {
+  color: @textColorBlack;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: @bgColorWhite;
+  box-shadow: @boxShadowPopUpMenu;
+  width: 320px;
+}
+
+.formPopUpMessage_success {
+  height: 323px;
+  position: absolute;
+  bottom: 125px;
+
+  .respondTo(tablet, {
+    width: 648px;
+    height: 347px;
+    left: 60px;
+    bottom: 335px;
+  });
+
+  .respondTo(desktop, {
+    left: 276px;
+    bottom: 305px;
+  });
+}
+
+.formPopUpMessage_failure {
+  height: 304px;
+  padding: 40px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  bottom: 500px;
+
+  .respondTo(tablet, {
+    width: 400px;
+    height: 347px;
+    left: 184px;
+    bottom: 150px;
+    padding: 40px;
+  });
+
+  .respondTo(desktop, {
+    left: 400px;
+    bottom: 100px;
+  });
+}
+
+.formPopUpMessage_hidden {
+  visibility: hidden;
+}
+
+.formPopUpMessage_visible {
+  visibility: visible;
+}

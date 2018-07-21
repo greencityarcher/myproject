@@ -1,0 +1,50 @@
+@import "../../_variables";
+
+.userForm__inputText {
+  height: 58px;
+  padding-left: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  background: @bgColorLightGray;
+  border: @bgColorLightGray;
+  color: @textColorBlack;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+
+  width: 100%;
+}
+
+.userForm__inputText:hover {
+  background: @bgColorGray;
+}
+
+.userForm__inputText:active {
+  background: @bgColorWhite;
+  border: solid 4px @bgColorGray;
+}
+
+.userForm__inputText_userPhone {
+  width: ~"calc(100% - 58px)";
+
+  .respondTo(tablet, {
+    width: 590px;
+  });
+
+  .respondTo(desktop, {
+    width: 240px;
+  });
+}
+
+.userForm__inputText_userEmail {
+  width: ~"calc(100% - 58px)";
+
+  .respondTo(tablet, {
+    width: 590px;
+  });
+
+  .respondTo(desktop, {
+    width: 240px;
+  });
+}

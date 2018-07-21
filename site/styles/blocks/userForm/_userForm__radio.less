@@ -1,0 +1,54 @@
+@import "../../_variables";
+
+.userForm__radio {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+  //margin: 10px 0 0 7px;
+}
+
+.userForm__radio + .userForm__valueLabel {
+  position: relative;
+  padding: 0 0 0 65px;
+  cursor: pointer;
+}
+
+.userForm__radio + .userForm__valueLabel:before {
+  content: '';
+  position: absolute;
+  top: -16px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border: 1px solid @borderColorLightGray;
+  border-radius: 50%;
+  background: @bgColorLightGray;
+}
+
+.userForm__radio + .userForm__valueLabel:hover:before {
+  background: @bgColorMiddleGray;
+}
+
+.userForm__radio + .userForm__valueLabel:active:hover:before {
+  background: @bgColorGray;
+}
+
+.userForm__radio + .userForm__valueLabel:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: 18px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: @bgColorBlack;
+  opacity: 0;
+}
+
+.userForm__radio + .userForm__valueLabel:active:hover:after {
+  background: @bgColorLightBlack;
+}
+
+.userForm__radio:checked + .userForm__valueLabel:after {
+  opacity: 1;
+}

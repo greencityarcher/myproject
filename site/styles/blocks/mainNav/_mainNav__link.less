@@ -1,0 +1,47 @@
+@import "../../_variables";
+
+.mainNav__link {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: @textColorWhite;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 56px;
+
+  .respondTo(tablet, {
+    color: @textColorBlack;
+  });
+}
+
+
+.mainNav__link:hover {
+  .respondTo(tablet, {
+    color: @textColorBlue;
+  });
+}
+
+.mainNav__link:active:hover {
+  .respondTo(tablet, {
+    color: @textColorGreyMenu;
+  });
+}
+
+
+
+.mainNav__item_active .mainNav__link {
+  .respondTo(tablet, {
+    color: @textColorActiveMenu;
+  });
+}
+
+.mainNav__item_active .mainNav__link:hover {
+  .respondTo(tablet, {
+    color: @textColorActiveMenuDark;
+  });
+}
+
+.mainNav__item_active .mainNav__link:active:hover {
+  .respondTo(tablet, {
+    color: @textColorActiveMenuGrey;
+  });
+}

@@ -1,0 +1,71 @@
+@import "../../_variables";
+
+.reason {
+  min-height: 180px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.reason_decor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.reason_blue {
+  background-color: @bgColorBlue;
+  color: @textColorWhite;
+}
+
+.reason_grey {
+  background-color: @bgColorLightGray;
+}
+
+.reason_1 {
+  .respondTo(tablet, {
+    grid-area: reason1;
+  });
+}
+
+.reason_2 {
+  .respondTo(tablet, {
+    grid-area: reason2;
+  });
+}
+
+.reason_3 {
+  .respondTo(tablet, {
+    grid-area: reason3;
+  });
+}
+
+.reason_4 {
+  .respondTo(tablet, {
+    grid-area: reason4;
+  });
+}
+
+.reason_5 {
+  .respondTo(tablet, {
+    grid-area: reason5;
+  });
+}
+
+.reason_4:before {
+  .mixinTopLine();
+  .respondTo(tablet, {
+    display: none;
+  });
+}
+
+.reason_5:before {
+  .mixinTopLine();
+  .respondTo(tablet, {
+    display: none;
+  });
+}

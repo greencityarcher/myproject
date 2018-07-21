@@ -1,0 +1,18 @@
+@import "../../_variables";
+
+.pageContainer {
+  box-shadow: @boxShadow;
+  width: auto;
+  //padding: 0 20px; //?????
+  margin: 0 auto;
+
+  .respondTo (tablet, {
+    //padding: 0 64px;
+  });
+
+  .respondTo (desktop, {
+    width: 1200px;
+    //width: 960px;
+    //padding: 0 64px;
+  });
+}

@@ -1,0 +1,141 @@
+@import "../../_variables";
+
+.userForm__section {
+  padding: 20px;
+  border-top: solid @borderColorGray 1px;
+  box-sizing: border-box;
+
+  .respondTo(tablet, {
+    padding: 20px 0 20px 0;
+    border-top: none;
+    width: 648px;
+  });
+
+  .respondTo(desktop, {
+    width: 960px;
+  });
+}
+
+.userForm__section_contacts {
+  //height: 300px;
+  //display: flex;
+  //flex-direction: column;
+  //justify-content: space-between;
+  .respondTo(tablet, {
+    position: relative;
+
+    &:after {
+      .mixinDecorLine(right);
+      bottom: -46px;
+    }
+
+    &:before {
+      .mixinDecorLine(left);
+      bottom: -46px;
+    }
+  });
+
+  .respondTo(desktop, {
+    &:after {
+      width: 300px;
+    }
+
+    &:before {
+      width: 300px;
+    }
+  });
+}
+
+.userForm__section_sendBtn {
+  border-top: none;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .respondTo(tablet, {
+    flex-direction: row;
+    justify-content: space-between;
+  });
+}
+
+.userForm__section_userName {
+  .respondTo(tablet, {
+    width: 324px;
+    padding: 20px 0 20px 40px;
+    order: 0;
+    position: relative;
+
+    &:after {
+      .mixinDecorLine(right);
+    }
+  });
+
+  .respondTo(desktop, {
+    width: 480px;
+
+    &:after {
+      width: 300px;
+    }
+  });
+}
+
+.userForm__section_feelings {
+  .respondTo(tablet, {
+    width: 324px;
+    padding: 20px 40px 20px 0;
+    order: -1;
+    position: relative;
+
+    &:after {
+      content: "";
+      width: 1px;
+      height: 250px;
+      background-color: @bgColorGray;
+      position: absolute;
+      top: 25px;
+      right: 0;
+    }
+
+    &:before {
+      .mixinDecorLine(left);
+    }
+  });
+
+  .respondTo(desktop, {
+    width: 480px;
+
+    &:before {
+      width: 300px;
+    }
+  });
+}
+
+.userForm__section_visitedPoints {
+  .respondTo(tablet, {
+    position: relative;
+
+    &:after {
+      .mixinDecorLine(right);
+    }
+
+    &:before {
+      .mixinDecorLine(left);
+    }
+  });
+
+  .respondTo(desktop, {
+    &:after {
+      width: 300px;
+    }
+
+    &:before {
+      width: 300px;
+    }
+  });
+}
+
+.userForm__section_summary {
+  .respondTo(tablet, {
+  });
+}

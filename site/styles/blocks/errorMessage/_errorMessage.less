@@ -1,0 +1,21 @@
+@import "../../_variables";
+
+.errorMessage {
+  padding-left: 20px;
+
+  color: @textColorRed;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+
+  .respondTo(tablet, {
+    position: absolute;
+    right: 30px;
+    top: 60px;
+  });
+
+  .respondTo(desktop, {
+    left: 175px;
+  });
+}

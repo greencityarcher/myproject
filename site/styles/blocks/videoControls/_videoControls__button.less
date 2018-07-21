@@ -1,0 +1,37 @@
+@import "../../_variables";
+
+.videoControls__button {
+  border: none;
+  height: 20px;
+  cursor: pointer;
+}
+
+.videoControls__button_replay {
+  background: url("../img/replay-dark.svg") no-repeat center transparent;
+  width: 20px;
+  margin-right: 133px;
+
+  .respondTo(tablet, {
+    margin-right: 0;
+    background-image: url("../img/replay.svg");
+    order: -1;
+  });
+}
+
+.videoControls__button_subtitles {
+  background: url("../img/subtitles-dark.svg") no-repeat center transparent;
+  width: 32px;
+
+  .respondTo(tablet, {
+    background-image: url("../img/subtitles.svg");
+  });
+}
+
+.videoControls__button_fullscreen {
+  background: url("../img/fullscreen-dark.svg") no-repeat center transparent;
+  width: 20px;
+
+  .respondTo(tablet, {
+    background-image: url("../img/fullscreen.svg");
+  });
+}

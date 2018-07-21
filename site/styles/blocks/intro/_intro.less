@@ -1,0 +1,40 @@
+@import "../../_variables";
+
+.intro {
+  width: auto;
+  background: url("../img/back-mobile.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .respondTo(tablet, {
+    background-image: url("../img/back-desktop.jpg");
+  });
+}
+
+.intro_index {
+  min-height: 389px;
+  margin-top: -27px;
+
+  .respondTo(tablet, {
+    min-height: 518px;
+  });
+
+  .respondTo(desktop, {
+    margin-top: -40px;
+  });
+}
+
+.intro_otherPages {
+  min-height: 158px;
+  margin-top: -27px;
+
+  .respondTo(tablet, {
+    min-height: 290px;
+  });
+
+  .respondTo(desktop, {
+    margin-top: -40px;
+  });
+}

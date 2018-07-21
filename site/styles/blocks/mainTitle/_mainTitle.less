@@ -1,0 +1,29 @@
+@import "../../_variables";
+
+.mainTitle {
+  padding: 20px 30px;
+  box-sizing: border-box;
+  text-align: center;
+  color: @textColorBlack;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+
+  .respondTo(tablet, {
+    min-height: 206px;
+    font-size: 17px;
+    padding: 25px 60px;
+  });
+
+  .respondTo(desktop, {
+    padding: 25px 243px;
+  });
+}
+
+.mainTitle_decor {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

@@ -1,0 +1,23 @@
+@import "../../_variables";
+
+.userForm {
+  width: 320px;
+  margin: 0 auto;
+
+  position: relative;
+
+  .respondTo(tablet, {
+    width: 768px;
+    padding: 30px 60px;
+    box-sizing: border-box;
+
+    display: flex;
+    flex-wrap: wrap;
+  });
+
+  .respondTo(desktop, {
+    width: 1200px;
+    padding: 30px 120px;
+  });
+}
+

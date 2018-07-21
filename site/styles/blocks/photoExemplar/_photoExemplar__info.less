@@ -1,0 +1,45 @@
+@import "../../_variables";
+
+.photoExemplar__info {
+  width: 280px;
+  margin: 0 auto;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 24px;
+  text-align: left;
+  color: @textColorBlack;
+
+  .respondTo(tablet, {
+    width: 324px;
+    min-height: 94px;
+    height: auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  });
+
+  .respondTo(desktop, {
+    width: 400px;
+    color: @textColorWhite;
+    position: absolute;
+    bottom: 0;
+    background: @bgColorTransparentGray;
+  });
+}
+
+.photoExemplar__info p {
+  margin: 0;
+}
+
+
+.photoExemplar_large .photoExemplar__info {
+  .respondTo(tablet, {
+    width: 648px;
+  });
+
+  .respondTo(desktop, {
+    width: 1200px;
+  });
+}

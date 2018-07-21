@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Главная</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+    <div class="pageContainer">
+        <header class="pageHeader">
+
+            <h1 class="visuallyHidden">Седона</h1>
+
+            <nav class="mainNav mainNav_closed mainNav_nojs">
+                <button class="mainNav__toggle" type="button">Открыть меню</button>
+
+                <ul class="mainNav__items">
+                    <li class="mainNav__item mainNav__item_active">
+                        <a class="mainNav__link">Главная</a>
+                    </li>
+                    <li class="mainNav__item">
+                        <a class="mainNav__link" href="photovideo.html">Фото и видео</a>
+                    </li>
+
+                    <li class="mainNav__item_empty"></li>
+
+                    <li class="mainNav__item">
+                        <a class="mainNav__link" href="userform.html">Форма отзыва</a>
+                    </li>
+                    <li class="mainNav__item">
+                        <a class="mainNav__link" href="https://htmlacademy.ru">HTML Academy</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="pageHeader__logo pageHeader__logo_decor">
+                <picture>
+                    <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                    <img src="img/logotyle-mobile.svg" alt="Седона">
+                </picture>
+            </div>
+
+            <div class="intro intro_index">
+                <img class="intro__textSvg intro__textSvg_index" src="img/text-index.svg" width="282">
+                <div class="intro__triangleSvg"></div>
+            </div>
+
+            <div class="mainTitle mainTitle_decor">
+                <p class="mainTitle__title">Седона &ndash; небольшой городок в Аризоне, заслуживающий большего!</p>
+                <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
+            </div>
+
+        </header>
+
+
+        <main class="pageMain">
+
+            <div class="pageContent">
+
+                <div class="reason__mobileDecorImg reason__mobileDecorImg_decor">
+                    <!--<img src="img/white-triangle.png" width="320" height="37">-->
+                    <!--<img src="img/intro-triangle.svg" width="">-->
+                </div>
+
+                <div class="reason reason_decor reason_blue reason_1">
+                    <p class="reason__title">Настоящий городок</p>
+                    <p>&mdash; &numero;1 &mdash;</p>
+                    <p>Седона не аттракцион для туристов, там течет своя жизнь</p>
+                </div>
+
+                <div class="photoCity"></div>
+
+
+                <div class="advantage advantage_house">
+                    <img class="advantage__img" src="img/icon-house.svg" alt="Жилье" width="39" height="37">
+                    <div class="advantage__desc">
+                        <p class="advantage__title">Жилье</p>
+                        <p class="advantage__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+                    </div>
+                </div>
+
+                <div class="advantage advantage_food">
+                    <img class="advantage__img" src="img/icon-burger.svg" alt="Еда" width="40" height="35">
+                    <div class="advantage__desc">
+                        <p class="advantage__title">Еда</p>
+                        <p class="advantage__text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                    </div>
+                </div>
+
+                <div class="advantage advantage_souvenirs">
+                    <img class="advantage__img" src="img/icon-gift.svg" alt="Сувениры" width="32" height="38">
+                    <div class="advantage__desc">
+                        <p class="advantage__title">Сувениры</p>
+                        <p class="advantage__text">Не только китайского, но и местного производства!</p>
+                    </div>
+                </div>
+
+
+                <div class="reason reason_decor reason_blue reason_2">
+                    <p class="reason__title">Там есть мост дьявола</p>
+                    <p class="reason__number">&mdash; &numero;2 &mdash;</p>
+                    <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+
+                <div class="photoNature"></div>
+
+                <div class="reason reason_decor reason_grey reason_3">
+                    <p class="reason__title">Небольшая площадь</p>
+                    <p class="reason__number">&mdash; &numero;3 &mdash;</p>
+                    <p class="reason__text">Все достопримечательности находятся очень близко</p>
+                </div>
+
+                <div class="reason reason_decor reason_grey reason_4">
+                    <p class="reason__title">Красивая дорога</p>
+                    <p class="reason__number">&mdash; &numero;4 &mdash;</p>
+                    <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                </div>
+
+                <div class="reason reason_decor reason_grey reason_5">
+                    <p class="reason__title">Мало туристов</p>
+                    <p class="reason__number">&mdash; &numero;5 &mdash;</p>
+                    <p class="reason__text">Большинство едет в Гранд Каньон и толпится там</p>
+                </div>
+
+            </div>
+
+            <div class="searchHotel">
+                <div class="searchHotelDesc">
+                    <p class="searchHotelDesc__title">Заинтересовались?</p>
+                    <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+                </div>
+
+                <button class="btn btn_searchHotel">Найти гостиницу</button>
+
+                <div class="sedonaMap">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d419485.0945274614!2d-112.07349102618355!3d34.7750526996172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C+AZ+86336%2C+USA!5e0!3m2!1sen!2sru!4v1525953535114" width="320" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+
+            </div>
+
+        </main>
+
+
+        <footer class="pageFooter">
+            <a class="visitsedonaHashtag" href="#">#visitsedona</a>
+
+            <div class="social">
+                <a class="socialLink socialLink_twitter" href="http://twitter.com">twitter</a>
+                <a class="socialLink socialLink_facebook" href="https://www.facebook.com">facebook</a>
+                <a class="socialLink socialLink_youtube" href="https://www.youtube.com/">youtube</a>
+            </div>
+
+            <div class="footerMadeBy">
+                <p class="footerMadeBy__text">Разработано</p>
+
+                <svg class="footerMadeBy__logo" xmlns="http://www.w3.org/2000/svg"
+                     xmlns:xlink="http://www.w3.org/1999/xlink"
+                     width="27px" height="34px" viewBox="0 0 27 34">
+                    <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+                        <feFlood flood-color="rgb(0,0,0)" result="coFloodOut1"/>
+                        <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+                        <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+                    </filter>
+
+                    <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filterHover">
+                        <feFlood flood-color="rgb(130,181,211)" result="coFloodOut1"/>
+                        <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+                        <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+                    </filter>
+                    <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filterDown">
+                        <feFlood flood-color="rgb(220,220,220)" result="coFloodOut1"/>
+                        <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+                        <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+                    </filter>
+
+                    <image x="0" y="0" width="27" height="34" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAQAAAAEqGq7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAGdSURBVDjLlZVtmYMwEIRfzsDFwUUCEpCABCQgAQdIQAISUgfUAZwCegr2fuSDhKS0Xf405Jmd2Z1dWmFDUQM1ih800ODjBmz88uAO3HkAVBg0mk9iY6uQcPT5/tjYgBsNoNF8By0hBKF5m0/TIIhlqz4SKfD19LJjpb3CSvauxiAIginIFySHKSYEYUAzul/qFaxnTzgs7073HNawIIWKWlYEQ53DDmmKUgzsCBMqhg0nad6j9DQh7PQHTIrNNkwnqC0jwExR2oCwM5zeLjHbUXAM6zEIa9iHhjVms+0YT5wGYaJnRZhpmB171EmrOvWndU0YnO1ZJ210rp91YDNOpi+kaPdM7/LarDbN8homGDo3Tj0qiLuENc720U3m+XkCMyx0oQ3Du7CWHWGmY0FYgkf2ObqcLY6tZmfIZMaeBlhsc+0mow1s6QSpA7YmNvvWp9L8jU3mupfnHLNx818YN96auVBBGoeHc7xMfrbPolLRa/TfEC2KvVySS7+a+eaF0G6F/FSq6Ky5jCP7VGS/iD4yoH8P4js3BamF+AcKs2C4HysKJgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNS0wN1QxNTo0MTo1MiswMDowMAANWZQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDUtMDdUMTU6NDE6NTIrMDA6MDBxUOEoAAAAAElFTkSuQmCC" />
+                </svg>
+            </div>
+        </footer>
+
+    </div>
+
+
+    <!-- script for open/close mobile menu -->
+    <script>
+        var navMain = document.querySelector('.mainNav');
+        var navToggle = document.querySelector('.mainNav__toggle');
+
+        navMain.classList.remove('mainNav_nojs');
+
+        navToggle.addEventListener('click', function() {
+            if (navMain.classList.contains('mainNav_closed')) {
+                navMain.classList.remove('mainNav_closed');
+                navMain.classList.add('mainNav_opened');
+            } else {
+                navMain.classList.add('mainNav_closed');
+                navMain.classList.remove('mainNav_opened');
+            }
+        });
+    </script>
+
+</body>
+</html>

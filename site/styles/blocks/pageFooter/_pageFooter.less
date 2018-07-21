@@ -1,0 +1,15 @@
+@import "../../_variables";
+
+.pageFooter {
+  height: 233px;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  .respondTo(tablet, {
+    height: 100px;
+    flex-direction: row;
+    padding: 0 60px;
+  });
+}

@@ -1,0 +1,24 @@
+@import "../../_variables";
+
+.userForm__inputTextArea {
+  width: 279px;
+  height: 160px;
+  box-sizing: border-box;
+  background: @bgColorLightGray;
+  border-color: @borderColorLightGray;
+  color: @textColorBlack;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: left;
+  margin-top: 20px;
+  padding: 20px;
+
+  .respondTo(tablet, {
+    width: 648px;
+  });
+
+  .respondTo(desktop, {
+    width: 960px;
+  });
+}

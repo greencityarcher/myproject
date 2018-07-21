@@ -1,0 +1,53 @@
+@import "../../_variables";
+
+.btn {
+  width: 280px;
+  height: 58px;
+  background: @bgColorBlue;
+  border: none;
+  color: @textColorWhite;
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+  background: @bgColorDarkBlue;
+}
+
+.btn:active:hover {
+  background: @bgColorDarkDarkBlue;
+  color: @textColorGray;
+}
+
+.btn:disabled {
+  background: @bgColorGray;
+}
+
+.btn_searchHotel {
+  margin-bottom: 40px;
+  .respondTo(tablet, {
+    width: 458px;
+  });
+}
+
+.btn_sendReview {
+  .respondTo(tablet, {
+    align-items: center;
+    width: 324px;
+  });
+
+  .respondTo(desktop, {
+    width: 480px;
+  });
+}
+
+.btn_formPopUp {
+  font-size: 18px;
+}
+
+.btn_formPopUpOk {
+  width: 180px;
+}

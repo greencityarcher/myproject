@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Форма отзыва</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+<div class="pageContainer">
+    <header class="pageHeader">
+
+        <nav class="mainNav mainNav_opened mainNav_nojs">
+            <button class="mainNav__toggle" type="button">Открыть меню</button>
+
+            <ul class="mainNav__items">
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="index.html">Главная</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="photovideo.html">Фото и видео</a>
+                </li>
+
+                <li class="mainNav__item_empty"></li>
+
+                <li class="mainNav__item mainNav__item_active">
+                    <a class="mainNav__link">Форма отзыва</a>
+                </li>
+                <li class="mainNav__item">
+                    <a class="mainNav__link" href="https://htmlacademy.ru">HTML Academy</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="pageHeader__logo pageHeader__logo_decor">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/logotype-desktop.svg">
+                <img src="img/logotyle-mobile.svg" alt="Седона">
+            </picture>
+        </div>
+
+        <div class="intro intro_otherPages">
+            <img class="intro__textSvg intro__textSvg_otherPages" src="img/text-sedona.svg" width="229">
+            <div class="intro__triangleSvg"></div>
+        </div>
+
+        <div class="mainTitle mainTitle_decor">
+            <p class="mainTitle__title">Оставьте свой отзыв</p>
+            <p>Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о посещенных вами достопримечательностях</p>
+        </div>
+
+    </header>
+
+
+    <main class="pageMain">
+
+        <form class="userForm" action="" method="post">
+            <div class="userForm__section userForm__section_userName">
+                <p class="userForm__caption">Представьтесь:</p>
+
+                <ul class="formSectionWrapper formSectionWrapper_userName">
+                    <li class="formSectionWrapper__item">
+                        <label class="userForm__label userForm__label_userName" for="userName">Имя*:</label>
+                        <input class="userForm__inputText" type="text" placeholder="Петр" id="userName">
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <label class="userForm__label userForm__label_userName" for="userSurname">Фамилия*:</label>
+                        <input class="userForm__inputText" type="text" placeholder="Иванов" id="userSurname">
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <label class="userForm__label userForm__label_userName" for="userPatronymic">Отчество:</label>
+                        <input class="userForm__inputText" type="text" placeholder="Александрович" id="userPatronymic">
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="userForm__section userForm__section_contacts">
+                <p class="userForm__caption">Контактная информация:</p>
+
+                <ul class="formSectionWrapper formSectionWrapper_contacts">
+                    <li class="formSectionWrapper__item">
+                        <label class="userForm__label userForm__label_contacts" for="userPhone">Контактный телефон*:</label>
+
+                        <div class="inputTextWithSign">
+                            <input class="userForm__inputText userForm__inputText_userPhone" name="userPhone" type="text" placeholder="Введите телефон" id="userPhone">
+                            <div class="inputTextWithSign__sign inputTextWithSign__sign_userPhone"></div>
+                        </div>
+
+                        <div class="errorMessage">
+                            Ошибка, перепроверьте номер
+                        </div>
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <label class="userForm__label userForm__label_contacts" for="useremail">Электронная почта*:</label>
+
+                        <div class="inputTextWithSign">
+                            <input class="userForm__inputText userForm__inputText_userEmail" name="userEmail" type="email" placeholder="Введите e-mail" id="useremail">
+                            <div class="inputTextWithSign__sign inputTextWithSign__sign_userEmail"></div>
+                        </div>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="userForm__section userForm__section_feelings">
+                <p class="userForm__caption">Ваше общее впечатление:</p>
+
+                <ul class="formSectionWrapper formSectionWrapper_feelings">
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__radio" type="radio" name="feeling" value="positive" id="feelingPositive" checked>
+                        <label class="userForm__valueLabel" for="feelingPositive">Скорее положительное</label>
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__radio" type="radio" name="feeling" value="negative" id="feelingNegative">
+                        <label class="userForm__valueLabel" for="feelingNegative">Скорее отрицательное</label>
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__radio" type="radio" name="feeling" value="unknown" id="feelingUnknown">
+                        <label class="userForm__valueLabel" for="feelingUnknown">Затрудняюсь ответить</label>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="userForm__section userForm__section_visitedPoints">
+                <p class="userForm__caption">Посещенные достопримечательности:</p>
+
+                <ul class="formSectionWrapper formSectionWrapper_visitedPoints">
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__checkbox" type="checkbox" id="sight1" name="sight" value="1" checked>
+                        <label class="userForm__valueLabel" for="sight1"><span></span>Мост Дьявола</label>
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__checkbox" type="checkbox" id="sight2" name="sight" value="2" checked>
+                        <label class="userForm__valueLabel" for="sight2"><span></span>Слайд-парк</label>
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__checkbox" type="checkbox" id="sight3" name="sight" value="3">
+                        <label class="userForm__valueLabel" for="sight3"><span></span>Гора-Колокол</label>
+                    </li>
+
+                    <li class="formSectionWrapper__item">
+                        <input class="userForm__checkbox" type="checkbox" id="sight4" name="sight" value="4" checked>
+                        <label class="userForm__valueLabel" for="sight4"><span></span>Красные скалы</label>
+                    </li>
+                </ul>
+
+            </div>
+
+            <div class="userForm__section userForm__section_summary">
+                <p class="userForm__caption">Опишите свои эмоции:</p>
+                <textarea class="userForm__inputTextArea" name="summaryText" placeholder="Опишите подробно все свои восторги"></textarea>
+            </div>
+
+            <div class="userForm__section userForm__section_sendBtn">
+                <button class="btn btn_sendReview">Отправить отзыв</button>
+
+                <p class="userForm__sendReviewComment">* - обязательные поля</p>
+            </div>
+
+            <div class="formPopUpMessage formPopUpMessage_failure formPopUpMessage_hidden">
+                <p class="formPopUpMessage__title">Что-то пошло не так!</p>
+                <p>Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+                <button class="btn btn_formPopUp btn_formPopUpOk">Ok</button>
+            </div>
+
+            <div class="formPopUpMessage formPopUpMessage_success formPopUpMessage_hidden">
+                <div class="formPopUpMessage__infoMessage">
+                    <p class="formPopUpMessage__title">Ваш отзыв отправлен!</p>
+                    <p>Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время мы опубликуем его на сайте.</p>
+                </div>
+
+                <div class="formPopUpMessage__blockWithBtn">
+                    <button class="btn btn_formPopUp">Закрыть окно</button>
+                </div>
+            </div>
+        </form>
+
+    </main>
+
+
+    <footer class="pageFooter">
+        <a class="visitsedonaHashtag" href="#">#visitsedona</a>
+
+        <div class="social">
+            <a class="socialLink socialLink_twitter" href="http://twitter.com">twitter</a>
+            <a class="socialLink socialLink_facebook" href="https://www.facebook.com">facebook</a>
+            <a class="socialLink socialLink_youtube" href="https://www.youtube.com/">youtube</a>
+        </div>
+
+        <div class="footerMadeBy">
+            <p class="footerMadeBy__text">Разработано</p>
+
+            <svg class="footerMadeBy__logo" xmlns="http://www.w3.org/2000/svg"
+                 xmlns:xlink="http://www.w3.org/1999/xlink"
+                 width="27px" height="34px" viewBox="0 0 27 34">
+                <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
+                    <feFlood flood-color="rgb(0,0,0)" result="coFloodOut1"/>
+                    <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+                    <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+                </filter>
+
+                <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filterHover">
+                    <feFlood flood-color="rgb(130,181,211)" result="coFloodOut1"/>
+                    <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+                    <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+                </filter>
+                <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filterDown">
+                    <feFlood flood-color="rgb(220,220,220)" result="coFloodOut1"/>
+                    <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1"/>
+                    <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1"/>
+                </filter>
+
+                <image x="0" y="0" width="27" height="34" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAAiCAQAAAAEqGq7AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAAGdSURBVDjLlZVtmYMwEIRfzsDFwUUCEpCABCQgAQdIQAISUgfUAZwCegr2fuSDhKS0Xf405Jmd2Z1dWmFDUQM1ih800ODjBmz88uAO3HkAVBg0mk9iY6uQcPT5/tjYgBsNoNF8By0hBKF5m0/TIIhlqz4SKfD19LJjpb3CSvauxiAIginIFySHKSYEYUAzul/qFaxnTzgs7073HNawIIWKWlYEQ53DDmmKUgzsCBMqhg0nad6j9DQh7PQHTIrNNkwnqC0jwExR2oCwM5zeLjHbUXAM6zEIa9iHhjVms+0YT5wGYaJnRZhpmB171EmrOvWndU0YnO1ZJ210rp91YDNOpi+kaPdM7/LarDbN8homGDo3Tj0qiLuENc720U3m+XkCMyx0oQ3Du7CWHWGmY0FYgkf2ObqcLY6tZmfIZMaeBlhsc+0mow1s6QSpA7YmNvvWp9L8jU3mupfnHLNx818YN96auVBBGoeHc7xMfrbPolLRa/TfEC2KvVySS7+a+eaF0G6F/FSq6Ky5jCP7VGS/iD4yoH8P4js3BamF+AcKs2C4HysKJgAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wNS0wN1QxNTo0MTo1MiswMDowMAANWZQAAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDUtMDdUMTU6NDE6NTIrMDA6MDBxUOEoAAAAAElFTkSuQmCC" />
+            </svg>
+        </div>
+    </footer>
+
+</div>
+
+
+<!-- script for open/close mobile menu -->
+<script>
+    var navMain = document.querySelector('.mainNav');
+    var navToggle = document.querySelector('.mainNav__toggle');
+
+    navMain.classList.remove('mainNav_nojs');
+
+    navToggle.addEventListener('click', function() {
+        if (navMain.classList.contains('mainNav_closed')) {
+            navMain.classList.remove('mainNav_closed');
+            navMain.classList.add('mainNav_opened');
+        } else {
+            navMain.classList.add('mainNav_closed');
+            navMain.classList.remove('mainNav_opened');
+        }
+    });
+</script>
+
+</body>
+</html>

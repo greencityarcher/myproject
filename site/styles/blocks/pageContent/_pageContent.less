@@ -1,0 +1,12 @@
+@import "../../_variables";
+
+.pageContent {
+  .respondTo(tablet, {
+    display: grid;
+    grid-template-columns: repeat(3, 256px);
+    grid-template: "reason1 photoCity photoCity"
+                   "advantageHouse advantageFood advantageSouvenirs"
+                   "photoNature photoNature reason2"
+                   "reason3 reason4 reason5"
+  });
+}

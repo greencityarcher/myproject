@@ -1,0 +1,18 @@
+@import "../../_variables";
+
+.reason__mobileDecorImg{
+  //width: 100%;
+  //object-fit: cover;
+  background: red;
+  height: 37px;
+
+  .respondTo(tablet, {
+    display: none;
+  });
+}
+
+.reason__mobileDecorImg_decor {
+  position: relative;
+  margin-bottom: -37px;
+  z-index: 1;
+}

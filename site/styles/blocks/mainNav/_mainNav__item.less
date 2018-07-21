@@ -1,0 +1,34 @@
+@import "../../_variables";
+
+.mainNav__item {
+  text-align: center;
+  background: @bgColorBlue;
+  box-shadow: @boxShadowMenuButton;
+
+  .respondTo(tablet, {
+    display: inline-block;
+    background: none;
+    box-shadow: none;
+    min-width: 140px;
+  });
+}
+
+.mainNav__item:hover {
+  .respondTo(onlymobile, {
+    background: @bgColorDarkBlue;
+  });
+}
+
+.mainNav__item:active:hover {
+  .respondTo(onlymobile, {
+    background: @bgColorDarkDarkBlue;
+  });
+}
+
+.mainNav__item_empty {
+  display: none;
+  .respondTo(tablet, {
+    display: block;
+    width: 140px;
+  });
+}

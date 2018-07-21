@@ -1,0 +1,52 @@
+@import "../../_variables";
+
+.userForm__checkbox {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.userForm__checkbox + .userForm__valueLabel {
+  position: relative;
+  padding: 0 0 0 65px;
+  cursor: pointer;
+}
+
+.userForm__checkbox + .userForm__valueLabel:before {
+  content: '';
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  border: 1px solid @borderColorLightGray;
+  border-radius: 5px;
+  background: @bgColorLightGray;
+}
+
+.userForm__checkbox + .userForm__valueLabel:hover:before {
+  background: @bgColorMiddleGray;
+}
+
+.userForm__checkbox + .userForm__valueLabel:active:hover:before {
+  background: @bgColorGray;
+}
+
+.userForm__checkbox + .userForm__valueLabel:after {
+  content: '';
+  position: absolute;
+  top: -12px;
+  left: 0;
+  width: 56px;
+  height: 56px;
+  background: url("../img/tick.svg") no-repeat center;
+  opacity: 0;
+}
+
+.userForm__checkbox + .userForm__valueLabel:active:hover:after {
+  opacity: 0.5;
+}
+
+.userForm__checkbox:checked + .userForm__valueLabel:after {
+  opacity: 1;
+}

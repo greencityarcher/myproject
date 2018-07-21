@@ -1,0 +1,47 @@
+@import "../../_variables";
+
+.formSectionWrapper {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.formSectionWrapper_userName {
+  height: 210px;
+}
+
+.formSectionWrapper_feelings {
+  height: 210px;
+}
+
+.formSectionWrapper_visitedPoints {
+  height: 300px;
+
+  .respondTo(tablet, {
+    height: 150px;
+    flex-wrap: wrap;
+    align-content: space-around;
+  });
+
+  .respondTo(desktop, {
+    height: 60px;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  });
+}
+
+.formSectionWrapper_contacts {
+  .respondTo(tablet, {
+    height: 200px;
+  });
+
+  .respondTo(desktop, {
+    height: 125px;
+    flex-direction: row;
+    align-items: center;
+  });
+}

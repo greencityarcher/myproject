@@ -1,0 +1,38 @@
+@import "../../_variables";
+
+.videoControls {
+  width: 280px;
+  height: 93px;
+  margin: 0 auto;
+  background-color: @bgColorTransparentGray;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  position: relative;
+  bottom: 46px;
+
+  .respondTo(tablet, {
+    width: 648px;
+    bottom: 93px;
+  });
+
+  .respondTo(desktop, {
+    width: 800px;
+  });
+}
+
+/*
+color: #f2f2f2;
+color: rgb(242, 242, 242);
+color: hsl(0, 0%, 95%);
+ */
+
+/*
+color: #666666;
+color: rgb(102, 102, 102);
+color: hsl(0, 0%, 40%);
+ */
